@@ -1,0 +1,60 @@
+@import url("../fonts/stylesheet.css");
+:root {
+    --red: #b30000;
+    --dark-gray: #202020;
+    --gray: #515151;
+    --light-gray: #636363;
+}
+
+body {
+    font-family: 'TT Firs Neue';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.25rem;
+    color: var(--dark-gray);
+    background-image: url(../img/back1.jpg);
+}
+
+.top-block-mobile,
+.top-block-desktop {
+    border-bottom: 2px solid #7c7c7c;
+}
+
+
+/* top navigation */
+
+.top-block-desktop .nav .nav-link {
+    color: var(--dark-gray);
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.top-block-desktop .nav .nav-link:hover,
+.top-block-desktop .nav .nav-link.active {
+    color: var(--red);
+}
+
+
+/* footer */
+
+#footer {
+    background: url(../img/footer_back_el.png) no-repeat center right;
+}
+
+
+/* main page */
+
+.feedback-form {
+    background-color: #fff;
+}
+
+.feedback-form .niga-block {
+    background: url(../img/niga.jpg) no-repeat center right;
+    background-size: contain;
+    height: 100%;
+}
+
+.feedback-form .form-block {
+    height: 400px;
+}
