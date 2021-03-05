@@ -50,9 +50,10 @@ body {
 }
 
 .feedback-form .niga-block {
-    background: url(../img/niga.jpg) no-repeat center right;
-    background-size: contain;
-    height: 100%;
+    background: url(../img/niga.jpg) no-repeat bottom right;
+    /* background-size: contain; */
+    /* height: 100%; */
+    height: 735px;
 }
 
 .feedback-form .form-block {

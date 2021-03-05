@@ -37,7 +37,10 @@
                         </a>
 
                         <nav class="nav">
-                            <a class="nav-link active" aria-current="page" href="#">Продукция</a>
+                            <a class="nav-link active" href="#" data-bs-toggle="dropdown">Продукция</a>
+
+                            <div class="dropdown-menu">123</div>
+
                             <a class="nav-link" href="#">О бренде</a>
                             <a class="nav-link" href="#">Где купить?</a>
                             <a class="nav-link" href="#">Оптовым клиентам</a>
@@ -96,28 +99,56 @@
                         <div class="tabs-block">
 
 
-                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home">
+                            <div class="nav nav-tabs justify-content-between">
+                                <div data-bs-toggle="tab" data-bs-target="#nav-line1">
                                     <img src="img/basic.png" alt="">
-                                </button>
-                                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile">Profile</button>
-                                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact">Contact</button>
+                                </div>
+                                <div data-bs-toggle="tab" data-bs-target="#nav-line2">
+                                    <img src="img/basic.png" alt="">
+                                </div>
+                                <div data-bs-toggle="tab" data-bs-target="#nav-line3">
+                                    <img src="img/basic.png" alt="">
+                                </div>
+                                <div data-bs-toggle="tab" data-bs-target="#nav-line4">
+                                    <img src="img/basic.png" alt="">
+                                </div>
                             </div>
 
-                            <div class="tab-content" id="nav-tabContent">
-                                <div class="tab-pane fade show active" id="nav-home">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="nav-line1">
                                     <div class="row">
                                         <div class="col-6">
-                                            description
+                                            <div class="description-block">
+                                                <div class="d-flex justify-content-between">
+                                                    <p><b>Basic</b> line</p>
+                                                    <p><b>25</b> продуктов в линейке</p>
+                                                </div>
+                                                <p>Sports nutrition Red Star Labs corresponds to the high standards, but it's main distinctive feature s the astonishing power of products.</p>
+                                                <div class="d-flex justify-content-between">
+                                                    <div>
+                                                        <img src="img/content1_ico.png" alt="">
+                                                        <div>При интенсивном стиле тренеровок</div>
+                                                    </div>
+                                                    <div>
+                                                        <img src="img/content2_ico.png" alt="">
+                                                        <div>Повышенный витаминный комплекс</div>
+                                                    </div>
+                                                    <div>
+                                                        <img src="img/content3_ico.png" alt="">
+                                                        <div>Для достижения быстрых резуальтатов</div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="col-6">
                                             <img class="img-fluid" src="img/product_photo.png" alt="">
                                         </div>
                                     </div>
-
                                 </div>
-                                <div class="tab-pane fade" id="nav-profile">2...</div>
-                                <div class="tab-pane fade" id="nav-contact">3...</div>
+
+                                <div class="tab-pane fade" id="nav-line2">2...</div>
+                                <div class="tab-pane fade" id="nav-line3">3...</div>
+                                <div class="tab-pane fade" id="nav-line4">4...</div>
                             </div>
 
 
@@ -128,16 +159,28 @@
         </section>
 
         <section class="feedback-form">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-6">
-                        <div class="niga-block">
-
-                        </div>
+                        <div class="niga-block"></div>
                     </div>
                     <div class="col-6">
                         <div class="form-block">
-                            form
+                            <form>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="name" placeholder="Имя">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" id="email" placeholder="Email">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="phone" placeholder="Телефон">
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" id="message" rows="3"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Отправить</button>
+                            </form>
                         </div>
                     </div>
                 </div>
