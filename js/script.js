@@ -32,8 +32,10 @@ document.querySelector('.mobile-menu-toggler').addEventListener('click', functio
 // https://kenwheeler.github.io/slick/
 $('.slider').slick({
     infinite: true,
+    dots: true
 });
 
 $('.main-product-slider').slick({
     infinite: true,
+    dots: true
 });
