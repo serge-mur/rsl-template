@@ -39,23 +39,60 @@ body {
 /* footer */
 
 #footer {
-    background: url(../img/footer_back_el.png) no-repeat center right;
+    background-image: url(../img/footer_back_el.png);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 500px) center;
+    /* background-size: contain; */
 }
 
 
 /* main page */
 
-.feedback-form {
-    background-color: #fff;
+.production-main .nav-tabs {
+    overflow-x: scroll;
 }
 
-.feedback-form .niga-block {
-    background: url(../img/niga.jpg) no-repeat bottom right;
-    /* background-size: contain; */
-    /* height: 100%; */
-    height: 735px;
+.production-main .nav-tabs .tab-element {
+    width: 200px;
+}
+
+.feedback-form {
+    background-image: url(../img/niga.jpg);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: calc(50% - 500px) bottom;
+    background-size: contain;
 }
 
 .feedback-form .form-block {
-    height: 400px;
+    /* height: 400px; */
 }
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+    .feedback-form {
+        background-image: none;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {}
+
+
+/* X-Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {}
+
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+
+@media (min-width: 1400px) {}
