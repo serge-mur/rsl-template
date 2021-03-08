@@ -3,7 +3,13 @@ $(function() {
     $('#right').offcanvas({
         modifiers: "right,overlay",
         triggerButton: '.js-offcanvas-trigger-right',
-        resize: true
+        onOpen: function() {
+            $('body').css("overflow", "hidden");
+        },
+        onClose: function() {
+            $('body').css("overflow", "scroll");
+        },
+        onInit: function() {}
     });
 });
 
