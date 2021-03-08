@@ -16,12 +16,12 @@ body {
     font-style: normal;
     font-size: 1.25rem;
     color: var(--dark-gray);
-    background-image: url(../img/back1.jpg);
 }
 
 .top-block-mobile,
 .top-block-desktop {
     border-bottom: 2px solid #7c7c7c;
+    background-image: url(../img/back1.jpg);
 }
 
 .top-block-mobile {
@@ -31,7 +31,6 @@ body {
     left: 0;
     z-index: 1030;
     width: 100%;
-    background-image: url(../img/back1.jpg);
 }
 
 
@@ -53,14 +52,31 @@ body {
 /* footer */
 
 #footer {
-    background-image: url(../img/footer_back_el.png);
-    background-repeat: no-repeat;
-    background-position: calc(50% + 500px) center;
+    background-image: url(../img/footer_back_el.png), url(../img/back1.jpg);
+    background-repeat: no-repeat, repeat;
+    background-position: calc(50% + 500px) center, center center;
     /* background-size: contain; */
+}
+
+.footer-nav .nav .nav-link {
+    color: var(--dark-gray);
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.footer-nav .nav .nav-link:hover,
+.footer-nav .nav .nav-link.active {
+    color: var(--red);
 }
 
 
 /* main page */
+
+.slider-main,
+.production-main {
+    background-image: url(../img/back1.jpg);
+}
 
 .production-main .nav-tabs {
     overflow-x: scroll;

@@ -1,7 +1,7 @@
 $(function() {
     // https://github.com/vmitsaras/js-offcanvas
     $('#right').offcanvas({
-        modifiers: "right,overlay",
+        modifiers: "right, overlay",
         triggerButton: '.js-offcanvas-trigger-right',
         onOpen: function() {
             $('body').css("overflow", "hidden");
@@ -11,8 +11,10 @@ $(function() {
         },
         onInit: function() {}
     });
-});
 
+
+
+});
 
 
 // https://kenwheeler.github.io/slick/
