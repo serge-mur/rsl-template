@@ -10,7 +10,7 @@ body {
     width: 100%;
     height: 100%;
     min-height: 75rem;
-    padding-top: 4.5rem;
+    padding-top: 75px;
     font-family: 'TT Firs Neue';
     font-weight: normal;
     font-style: normal;
@@ -54,20 +54,45 @@ body {
 #footer {
     background-image: url(../img/footer_back_el.png), url(../img/back1.jpg);
     background-repeat: no-repeat, repeat;
-    background-position: calc(50% + 500px) center, center center;
-    /* background-size: contain; */
+    background-position: center bottom, center center;
 }
 
-.footer-nav .nav .nav-link {
+.footer-logo {
+    padding: 35px 0;
+}
+
+.footer-nav {
+    flex-direction: column;
+    padding: 90px 0 30px 0;
+}
+
+.footer-nav .nav-link {
     color: var(--dark-gray);
-    font-size: 1rem;
+    font-size: 0.875rem;
     font-weight: 600;
     text-transform: uppercase;
 }
 
-.footer-nav .nav .nav-link:hover,
-.footer-nav .nav .nav-link.active {
+.footer-nav .nav-link:hover,
+.footer-nav .nav-link.active {
     color: var(--red);
+}
+
+.footer-social {
+    padding: 90px 0 30px 0;
+}
+
+.footer-social .nav-link {
+    color: #fff;
+    font-size: .75rem;
+    line-height: 1;
+}
+
+.footer-copyright {
+    font-size: .75rem;
+    line-height: 1;
+    max-width: 450px;
+    padding: 0 0 30px 0;
 }
 
 
@@ -78,13 +103,75 @@ body {
     background-image: url(../img/back1.jpg);
 }
 
+.slider-main {
+    padding-top: 30px;
+}
+
+
+/* top slider */
+
+.main-top-slider.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
+.main-top-slider .slick-dots {
+    bottom: 30px;
+    left: 0;
+    text-align: left;
+}
+
+.main-top-slider .slick-prev {
+    left: -60px;
+}
+
+.main-top-slider .slick-next {
+    right: -60px;
+}
+
+
+/* production main */
+
+.production-main {
+    padding: 30px 0;
+}
+
+.production-main .intro-block .text-content {
+    padding: 30px 0;
+}
+
 .production-main .nav-tabs {
-    overflow-x: scroll;
+    border-bottom: 0;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 .production-main .nav-tabs .tab-element {
-    width: 200px;
+    display: flex;
+    justify-content: center;
+    /* width: 25%; */
+    padding: 0 30px;
+    border-right: 1px solid #a3a3a3;
 }
+
+.production-main .nav-tabs .tab-element:first-child {
+    padding-left: 0;
+}
+
+.production-main .nav-tabs .tab-element:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+.production-main .nav-tabs .tab-element img {
+    /* margin: 0 auto; */
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* .production-main .nav-tabs {
+    overflow-x: scroll;
+} */
 
 .description-line-block .properties-block {}
 
@@ -168,8 +255,8 @@ body {
 .slick-dots li {
     position: relative;
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     margin: 0 5px;
     padding: 0;
     cursor: pointer;
@@ -179,22 +266,26 @@ body {
     font-size: 0;
     line-height: 0;
     display: block;
-    width: 20px;
-    height: 20px;
-    padding: 5px;
+    width: 10px;
+    height: 10px;
+    padding: 0;
     cursor: pointer;
     color: transparent;
     border: 0;
     outline: none;
-    background: transparent;
+    background: var(--light-gray);
+    border-radius: 50%;
 }
 
 .slick-dots li button:hover,
-.slick-dots li button:focus {
+.slick-dots li button:focus,
+.slick-dots li.slick-active button {
     outline: none;
+    background: var(--red);
 }
 
-.slick-dots li button:hover:before,
+
+/* .slick-dots li button:hover:before,
 .slick-dots li button:focus:before {
     opacity: 1;
 }
@@ -219,7 +310,7 @@ body {
 .slick-dots li.slick-active button:before {
     opacity: .75;
     color: black;
-}
+} */
 
 .slick-slide,
 .slick-slide * {
@@ -247,6 +338,18 @@ body {
     body {
         padding-top: 0;
     }
+    .slider-main {
+        padding-top: 90px;
+    }
+    .production-main {
+        padding: 60px 0;
+    }
+    #footer {
+        background-position: calc(50% + 500px) bottom, center center;
+    }
+    .footer-nav {
+        flex-direction: row;
+    }
 }
 
 
@@ -258,3 +361,12 @@ body {
 /* XX-Large devices (larger desktops, 1400px and up) */
 
 @media (min-width: 1400px) {}
+
+
+/* <lg */
+
+@media (max-width: 991px) {
+    .production-main .intro-block .logo-content {
+        width: 95px;
+    }
+}

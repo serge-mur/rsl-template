@@ -12,15 +12,20 @@ $(function() {
         onInit: function() {}
     });
 
-
-
 });
 
 
 // https://kenwheeler.github.io/slick/
-$('.slider').slick({
+$('.main-top-slider').slick({
     infinite: true,
-    dots: true
+    dots: true,
+    responsive: [{
+        breakpoint: 992,
+        settings: {
+            arrows: false,
+            dots: false
+        }
+    }]
 });
 
 $('.main-product-slider').slick({
