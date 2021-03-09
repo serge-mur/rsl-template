@@ -29,6 +29,11 @@ $('.main-top-slider').slick({
 });
 
 $('.main-product-slider').slick({
-    infinite: true,
-    dots: true
+    dots: true,
+    responsive: [{
+        breakpoint: 1200,
+        settings: {
+            arrows: false
+        }
+    }]
 });
