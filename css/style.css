@@ -48,17 +48,45 @@
         text-align: left;
         color: #fff;
         background-color: var(--red);
+        border-bottom: 1px solid var(--dark-gray);
+        border-radius: 0;
+    }
+    
+    #mobile-accordion .accordion-collapse {
         border: none;
+    }
+    
+    #mobile-accordion .accordion-header .accordion-button:focus {
+        border: none;
+        border-bottom: 1px solid var(--dark-gray);
+        box-shadow: none;
+    }
+    
+    #mobile-accordion .accordion-button::after {
+        width: 16px;
+        height: 16px;
+        background-image: url(../img/arrow_white.png);
+    }
+    
+    .accordion-button:not(.collapsed)::after {
+        background-image: url(../img/arrow_white.png);
+        transform: rotate(90deg);
     }
     
     #mobile-accordion .accordion-body .nav .nav-link {
         font-size: 0.875rem;
         font-weight: 500;
         color: var(--dark-gray);
+        padding: .25rem 1rem;
     }
     
-    #mobile-accordion .accordion-collapse {
-        border: none;
+    #mobile-accordion .accordion-body .nav .sub-menu {
+        list-style: none;
+        padding-left: 1rem;
+    }
+    
+    #mobile-accordion .accordion-body .nav .sub-menu .nav-link {
+        color: var(--gray);
     }
     
     .mobile-menu-bottom {
@@ -70,6 +98,16 @@
         font-weight: 500;
         color: #fff;
         text-transform: uppercase;
+        border-bottom: 1px solid #5e5e5e;
+    }
+    
+    .mobile-menu-bottom .phone-menu {
+        display: block;
+        padding: 1.5rem 1rem;
+        text-decoration: none;
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: #fff;
     }
     /* top navigation */
     
@@ -246,7 +284,7 @@
     .production-main .nav-tabs .tab-element {
         display: flex;
         justify-content: center;
-        padding: 0 60px;
+        padding: 0 50px;
         border-right: 1px solid #a3a3a3;
     }
     
@@ -304,7 +342,7 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: nowrap;
-        font-size: 1.25rem;
+        font-size: 1rem;
         background: url(../img/pattern_button.png) no-repeat center right #e2e2e2;
         background-size: cover;
         border-radius: 0;
