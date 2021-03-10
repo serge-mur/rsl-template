@@ -46,57 +46,59 @@
                                 <div class="dropdown-menu dropdown-bubble w-75 p-4">
                                     <div class="row">
                                         <div class="col-3">
-                                            <h3>Категории</h3>
+                                            <h3 class="px-3 mb-3 menu-title">Категории</h3>
                                             <ul class="nav flex-column">
-                                                <li><a href="#">Протеины</a>
-                                                    <ul>
-                                                        <li><a href="#">Сывороточный</a></li>
-                                                        <li><a href="#">Изолят</a></li>
-                                                        <li><a href="#">Казеин</a></li>
-                                                        <li><a href="#">Говяжий</a></li>
+                                                <li><a class="nav-link" href="#">Протеины</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a class="nav-link" href="#">Сывороточный</a></li>
+                                                        <li><a class="nav-link" href="#">Изолят</a></li>
+                                                        <li><a class="nav-link" href="#">Казеин</a></li>
+                                                        <li><a class="nav-link" href="#">Говяжий</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="#">Витамины и минералы</a></li>
-                                                <li><a href="#">Аминокислоты и ВСАА</a></li>
-                                                <li><a href="#">Карнитин</a></li>
-                                                <li><a href="#">Специальные препараты</a></li>
-                                                <li><a href="#">Напитки</a></li>
-                                                <li><a href="#">Батончики</a></li>
-                                                <li><a href="#">Предтренировочные комплексы</a></li>
-                                                <li><a href="#">Препараты для связок и суставов</a></li>
+                                                <li><a class="nav-link" href="#">Витамины и минералы</a></li>
+                                                <li><a class="nav-link" href="#">Аминокислоты и ВСАА</a></li>
+                                                <li><a class="nav-link" href="#">Карнитин</a></li>
+                                                <li><a class="nav-link" href="#">Специальные препараты</a></li>
+                                                <li><a class="nav-link" href="#">Напитки</a></li>
+                                                <li><a class="nav-link" href="#">Батончики</a></li>
+                                                <li><a class="nav-link" href="#">Предтренировочные комплексы</a></li>
+                                                <li><a class="nav-link" href="#">Препараты для связок и суставов</a></li>
                                             </ul>
                                             <a class="all-catalog-link" href="#">Весь каталог</a>
                                         </div>
-                                        <div class="col-9">
-                                            <div class="row">
-                                                <div class="col-4">
-                                                    <h3>Продукты по целям</h3>
+                                        <div class="col-9 d-flex flex-column justify-content-between">
+                                            <div class="row h-75">
+                                                <div class="col-4 border-left">
+                                                    <h3 class="px-3 mb-3 menu-title">Продукты по целям</h3>
                                                     <ul class="nav flex-column">
-                                                        <li><a href="#">Повышение выносливости</a></li>
-                                                        <li><a href="#">Похудение и снижение веса</a></li>
-                                                        <li><a href="#">Набор массы</a></li>
-                                                        <li><a href="#">Здоровье и долголетие</a></li>
-                                                        <li><a href="#">Здоровый сон и восстановление</a></li>
+                                                        <li><a class="nav-link" href="#">Повышение выносливости</a></li>
+                                                        <li><a class="nav-link" href="#">Похудение и снижение веса</a></li>
+                                                        <li><a class="nav-link" href="#">Набор массы</a></li>
+                                                        <li><a class="nav-link" href="#">Здоровье и долголетие</a></li>
+                                                        <li><a class="nav-link" href="#">Здоровый сон и восстановление</a></li>
                                                     </ul>
                                                 </div>
-                                                <div class="col-8">
-                                                    <h3>Линейки</h3>
+                                                <div class="col-8 border-left">
+                                                    <h3 class="mb-3 menu-title">Линейки</h3>
                                                     <div class="row">
-                                                        <div class="col-6">
-                                                            <a href="#"><img class="img-fluid" src="img/basic.png" alt=""></a>
+                                                        <div class="col-6 my-3 border-right">
+                                                            <a href="#"><img class="img-fluid" src="img/basic_menu.png" alt=""></a>
                                                         </div>
-                                                        <div class="col-6">
-                                                            <a href="#"><img class="img-fluid" src="img/essential.png" alt=""></a>
+                                                        <div class="col-6 my-3">
+                                                            <a href="#"><img class="img-fluid" src="img/essential_menu.png" alt=""></a>
                                                         </div>
-                                                        <div class="col-6">
-                                                            <a href="#"><img class="img-fluid" src="img/superior.png" alt=""></a>
+                                                        <div class="col-6 my-3 border-right">
+                                                            <a href="#"><img class="img-fluid" src="img/superior_menu.png" alt=""></a>
                                                         </div>
-                                                        <div class="col-6">
-                                                            <a href="#"><img class="img-fluid" src="img/beowulf.png" alt=""></a>
+                                                        <div class="col-6 my-3">
+                                                            <a href="#"><img class="img-fluid" src="img/beowulf_menu.png" alt=""></a>
                                                         </div>
 
                                                     </div>
                                                 </div>
+                                            </div>
+                                            <div class="row">
                                                 <div class="col-12">
                                                     <a href="#"><img class="img-fluid" src="img/menu_banner.png" alt=""></a>
                                                 </div>
@@ -319,57 +321,79 @@
         </footer>
     </div>
 
-    <aside id="right">
+    <aside class="d-flex flex-column justify-content-between" id="right">
 
-        <div class="accordion" id="accordionExample">
+        <div class="accordion h-100" id="mobile-accordion">
+
             <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
+                <div class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         Продукция
                 </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                </div>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#mobile-accordion">
                     <div class="accordion-body">
-                        <nav class="nav flex-column">
-                            <a class="nav-link" href="#">Главная</a>
-                            <a class="nav-link" href="#">Каталог товаров</a>
-                        </nav>
+                        <ul class="nav flex-column">
+                            <li><a class="nav-link" href="#">Протеины</a>
+                                <ul>
+                                    <li><a class="nav-link" href="#">Сывороточный</a></li>
+                                    <li><a class="nav-link" href="#">Изолят</a></li>
+                                    <li><a class="nav-link" href="#">Казеин</a></li>
+                                    <li><a class="nav-link" href="#">Говяжий</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="nav-link" href="#">Аминокислоты и ВСАА</a></li>
+                            <li><a class="nav-link" href="#">Карнитин</a></li>
+                            <li><a class="nav-link" href="#">Специальные препараты</a></li>
+                            <li><a class="nav-link" href="#">Напитки</a></li>
+                            <li><a class="nav-link" href="#">Батончики</a></li>
+                            <li><a class="nav-link" href="#">Предтренировочные комплексы</a></li>
+                            <li><a class="nav-link" href="#">Препараты для связок и суставов</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
+
             <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
+                <div class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         Линейки
-                </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <div>1</div>
-                        <div>2</div>
-                        <div>3</div>
-                        <div>4</div>
-                    </div>
+                    </button>
                 </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Цели
-                </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#mobile-accordion">
                     <div class="accordion-body">
                         <nav class="nav flex-column">
-                            <a class="nav-link" href="#">Главная</a>
-                            <a class="nav-link" href="#">Каталог товаров</a>
+                            <a class="nav-link" href="#"><img class="img-fluid" src="img/basic_menu.png" alt=""></a>
+                            <a class="nav-link" href="#"><img class="img-fluid" src="img/essential_menu.png" alt=""></a>
+                            <a class="nav-link" href="#"><img class="img-fluid" src="img/superior_menu.png" alt=""></a>
+                            <a class="nav-link" href="#"><img class="img-fluid" src="img/beowulf_menu.png" alt=""></a>
                         </nav>
                     </div>
                 </div>
             </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Цели
+                    </button>
+                </div>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#mobile-accordion">
+                    <div class="accordion-body">
+                        <nav class="nav flex-column">
+                            <a class="nav-link" href="#">Повышение выносливости</a>
+                            <a class="nav-link" href="#">Похудение и снижение веса</a>
+                            <a class="nav-link" href="#">Набор массы</a>
+                            <a class="nav-link" href="#">Здоровье и долголетие</a>
+                            <a class="nav-link" href="#">Здоровый сон и восстановление</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-        <div class="menu-block">
+        <div class="mobile-menu-bottom">
             <nav class="nav flex-column">
                 <a class="nav-link" href="#">О бренде</a>
                 <a class="nav-link" href="#">Где купить?</a>
