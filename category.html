@@ -133,7 +133,179 @@
         </header>
 
         <main id="main">
-            123
+            <div class="category-main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <a class="d-block" href="#">
+                                <img src="img/cat_top_banner.jpg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="#sidebar-menu" class="btn d-lg-none" data-bs-toggle="collapse">Категории и линейки</a>
+                        </div>
+                        <div class="col-12">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">Главная страница</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Каталог продукции</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-2">
+
+                            <div class="sidebar-menu collapse d-lg-block" id="sidebar-menu">
+
+                                <a class="btn" data-bs-toggle="collapse" href="#menu-block-1">Категории</a>
+                                <div class="collapse show" id="menu-block-1">
+                                    <ul class="nav flex-column">
+                                        <li><a class="nav-link" href="#">Протеины</a>
+                                            <ul class="sub-menu">
+                                                <li><a class="nav-link" href="#">Сывороточный</a></li>
+                                                <li><a class="nav-link" href="#">Изолят</a></li>
+                                                <li><a class="nav-link" href="#">Казеин</a></li>
+                                                <li><a class="nav-link" href="#">Говяжий</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="nav-link" href="#">Аминокислоты и ВСАА</a></li>
+                                        <li><a class="nav-link" href="#">Карнитин</a></li>
+                                        <li><a class="nav-link" href="#">Специальные препараты</a></li>
+                                        <li><a class="nav-link" href="#">Напитки</a></li>
+                                        <li><a class="nav-link" href="#">Батончики</a></li>
+                                        <li><a class="nav-link" href="#">Предтренировочные комплексы</a></li>
+                                        <li><a class="nav-link" href="#">Препараты для связок и суставов</a></li>
+                                    </ul>
+                                </div>
+
+                                <a class="btn" data-bs-toggle="collapse" href="#menu-block-2">Линейки</a>
+                                <div class="collapse show" id="menu-block-2">
+                                    <nav class="nav flex-column">
+                                        <a class="nav-link" href="#"><img class="img-fluid" src="img/line_basic_ico.png" alt=""></a>
+                                        <a class="nav-link" href="#"><img class="img-fluid" src="img/line_basic_ico.png" alt=""></a>
+                                        <a class="nav-link" href="#"><img class="img-fluid" src="img/line_basic_ico.png" alt=""></a>
+                                        <a class="nav-link" href="#"><img class="img-fluid" src="img/line_basic_ico.png" alt=""></a>
+                                    </nav>
+                                </div>
+
+                                <a class="btn" data-bs-toggle="collapse" href="#menu-block-3">Цели</a>
+                                <div class="collapse show" id="menu-block-3">
+                                    <nav class="nav flex-column">
+                                        <a class="nav-link" href="#">Повышение выносливости</a>
+                                        <a class="nav-link" href="#">Похудение и снижение веса</a>
+                                        <a class="nav-link" href="#">Набор массы</a>
+                                        <a class="nav-link" href="#">Здоровье и долголетие</a>
+                                        <a class="nav-link" href="#">Здоровый сон и восстановление</a>
+                                    </nav>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-lg-10">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="sort-block d-flex flex-nowrap">
+                                        <div class="label">Сортировать продукт</div>
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            По популярности
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item" href="#">Сначала популярные</a></li>
+                                                <li><a class="dropdown-item" href="#">Сначала не популярные</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            По цене
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item" href="#">По возрастанию</a></li>
+                                                <li><a class="dropdown-item" href="#">По убыванию</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6">
+                                    <div class="sort-block d-flex flex-nowrap">
+                                        <div class="label">Вкус</div>
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Темный шоколад
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item" href="#">Другой вкус 1</a></li>
+                                                <li><a class="dropdown-item" href="#">Другой вкус 2</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="label">Цена</div>
+                                        <div class="range">
+                                            <input type="range" class="form-range" id="customRange1">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row gx-0">
+                                <div class="col-12 col-lg-3">
+                                    <div class="card">
+                                        <img src="img/cat_prod_1.png" class="card-img-top" alt="">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Спортивный напиток Протеин Meal Whey </h5>
+                                            <div class="card-buy">
+                                                <div class="price">2 420 руб</div>
+                                                <div class="in-cart"><img src="img/cart_ico.png" alt=""></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-3">
+                                    <div class="card">
+                                        <img src="img/cat_prod_1.png" class="card-img-top" alt="">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Спортивный напиток Протеин Meal Whey </h5>
+                                            <div class="card-buy">
+                                                <div class="price">2 420 руб</div>
+                                                <div class="in-cart"><img src="img/cart_ico.png" alt=""></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-4">
+                            <a href="#" class="d-block">
+                                <img src="img/cat_bottom_banner1.jpg" alt="1" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <a href="#" class="d-block">
+                                <img src="img/cat_bottom_banner2.jpg" alt="2" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <a href="#" class="d-block">
+                                <img src="img/cat_bottom_banner3.jpg" alt="3" class="img-fluid">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
         </main>
 
         <footer id="footer">
