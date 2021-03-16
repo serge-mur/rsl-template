@@ -407,6 +407,162 @@
         border-radius: 0;
         padding: .5rem 2.5rem;
     }
+    /* category page */
+    
+    .category-main {
+        background-image: url(../img/back1.jpg);
+    }
+    
+    .category-main .trigger-cat-menu {
+        background-color: var(--dark-gray);
+        color: #fff;
+        font-size: 1rem;
+        border-radius: 0;
+        width: 100%;
+    }
+    
+    .sidebar-menu .menu-block {
+        margin-bottom: 30px;
+    }
+    
+    .sidebar-menu .btn {
+        display: flex;
+        align-items: center;
+        color: var(--dark-gray);
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    
+    .sidebar-menu .btn:focus {
+        box-shadow: none;
+    }
+    
+    .sidebar-menu .btn::after {
+        flex-shrink: 0;
+        margin-left: 10px;
+        content: "";
+        transition: transform .2s ease-in-out;
+        width: 9px;
+        height: 5px;
+        background-image: url(../img/arrow_red_top.png);
+        transform: rotate(180deg);
+    }
+    
+    .sidebar-menu .btn:not(.collapsed)::after {
+        background-image: url(../img/arrow_red_top.png);
+        transform: rotate(0deg);
+    }
+    
+    .sidebar-menu .nav .nav-link {
+        color: var(--dark-gray);
+        font-size: 0.875rem;
+        font-weight: 500;
+        padding: .25rem 1rem;
+    }
+    
+    .sidebar-menu .nav .nav-link:hover,
+    .sidebar-menu .nav .nav-link.active {
+        text-decoration: underline;
+    }
+    
+    .sidebar-menu .nav .sub-menu {
+        list-style: none;
+        padding-left: .5rem;
+    }
+    
+    .sorting-block {
+        padding-bottom: 45px;
+    }
+    
+    .sorting-block .sort-element .label {
+        color: var(--gray);
+        font-size: 0.875rem;
+    }
+    
+    .sorting-block .sort-element .btn {
+        color: var(--dark-gray);
+        font-size: 0.875rem;
+        box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5), -1px -1px 1px rgba(255, 255, 255, 1);
+        border-radius: 0;
+        padding: .25rem .75rem;
+    }
+    
+    .sorting-block .sort-element .btn:hover,
+    .sorting-block .sort-element .btn:focus {
+        outline: 0;
+        box-shadow: inset 2px 2px 1px rgba(0, 0, 0, 0.5), 1px 1px 1px rgba(255, 255, 255, 1);
+    }
+    /* card */
+    
+    .product-grid .product-tile {
+        position: relative;
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+    }
+    
+    .product-grid .product-tile .card-img-top {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    
+    .product-grid .product-tile .card-title {
+        color: var(--dark-gray);
+        font-size: 1rem;
+    }
+    
+    .product-grid .product-tile .card-buy {
+        display: flex;
+        align-items: center;
+    }
+    
+    .product-grid .product-tile .card-buy .price {
+        color: var(--gray);
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-right: 1rem;
+    }
+    
+    .product-grid .product-tile:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 50%;
+        border-right: 1px solid #a3a3a3;
+        content: "";
+    }
+    
+    .product-grid>div:first-child .product-tile:before {
+        border: none;
+    }
+    
+    .category-bottom {
+        padding: 45px 0;
+        ;
+    }
+    /* breadcrumb */
+    
+    .breadcrumb {
+        margin: 30px 0;
+    }
+    
+    .breadcrumb-item a {
+        display: block;
+        color: var(--dark-gray);
+        font-size: 1rem;
+        text-decoration: none;
+    }
+    
+    .breadcrumb-item.active {
+        color: var(--dark-gray);
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    
+    .breadcrumb-item+.breadcrumb-item::before {
+        color: var(--dark-gray);
+        content: ">";
+    }
     /* https://kenwheeler.github.io/slick/ */
     
     .slick-loading .slick-list {
