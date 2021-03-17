@@ -37,3 +37,30 @@ $('.main-product-slider').slick({
         }
     }]
 });
+
+$('.card-product-slider').slick({
+    dots: true,
+    responsive: [{
+        breakpoint: 1200,
+        settings: {
+            arrows: false
+        }
+    }]
+});
+
+$('.card-other-slider').slick({
+    infinite: false,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [{
+        breakpoint: 992,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: false,
+            centerMode: true,
+            centerPadding: '60px'
+        }
+    }]
+});

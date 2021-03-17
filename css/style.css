@@ -15,6 +15,7 @@
         font-weight: normal;
         font-style: normal;
         font-size: 1.25rem;
+        line-height: 1.2;
         color: var(--dark-gray);
         background-color: #e8e8e8;
     }
@@ -319,22 +320,24 @@
     .production-main .tab-content {
         padding-top: 60px;
     }
+    /* main and card */
     
-    .description-line-block .properties-block {
+    .properties-block {
         margin: 30px 0;
         font-size: 0.875rem;
         text-align: center;
     }
     
-    .description-line-block .properties-block img {
+    .properties-block img {
         margin-bottom: 10px;
     }
+    /* main and card */
     
-    .description-line-block .substance-block {
+    .substance-block {
         margin: 30px 0;
     }
     
-    .description-line-block .substance-block>div {
+    .substance-block>div {
         color: #fff;
         font-size: 0.875rem;
         background: linear-gradient(to right, var(--red), transparent);
@@ -544,21 +547,157 @@
     
     .category-bottom {
         padding: 45px 0;
-        ;
     }
     /* **************/
     /* product page */
     /* **************/
     
-    .product-top {
+    .product-main {
         background-image: url(../img/back1.jpg);
     }
     
-    .product-slider-block {
+    #card .title-block .line-img {
+        display: block;
+        margin-bottom: 15px;
+    }
+    
+    #card .title-block {
+        margin-bottom: 60px;
+    }
+    
+    #card .title-block h1 {
+        font-size: 1.875rem;
+        font-weight: 600;
+    }
+    
+    #card .title-block h1+p {
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+    
+    #card .nutritious-block h3 {
+        font-size: 1.75rem;
+        font-weight: 600;
+        line-height: 1;
+        padding-bottom: 15px;
+    }
+    
+    #card .nutritious-block table {
+        width: 100%;
+        font-size: 1rem;
+    }
+    
+    #card .nutritious-block tr td {
+        padding-bottom: 15px;
+    }
+    
+    #card .product-slider-block {
         background-image: url(../img/product_back.png);
         background-repeat: no-repeat;
         background-position: bottom right;
         background-size: contain;
+    }
+    
+    #card .card-product-slider .slick-slide img {
+        margin: auto;
+    }
+    
+    #card .sort-element {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 100%;
+        margin: 60px 0;
+    }
+    
+    #card .sort-element .label {
+        color: var(--dark-gray);
+        font-size: 1.125rem;
+        font-weight: bold;
+        margin-right: 20px;
+    }
+    
+    #card .sort-element .btn {
+        color: var(--dark-gray);
+        font-size: 1.125rem;
+        box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5), -1px -1px 1px rgba(255, 255, 255, 1);
+        border-radius: 0;
+        padding: .25rem .75rem;
+    }
+    
+    #card .sort-element .btn:hover,
+    #card .sort-element .btn:focus {
+        outline: 0;
+        box-shadow: inset 2px 2px 1px rgba(0, 0, 0, 0.5), 1px 1px 1px rgba(255, 255, 255, 1);
+    }
+    
+    #card .price {
+        font-size: 1.875rem;
+        font-weight: 600;
+    }
+    
+    #card .quantity-block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba(0, 0, 0, .2);
+    }
+    
+    #card .quantity-block .btn {
+        font-size: 1.5rem;
+        font-weight: bold;
+        width: 45px;
+    }
+    
+    #card .quantity-block .form-control {
+        font-size: 1rem;
+        font-weight: bold;
+        background-color: transparent;
+        border: none;
+        width: 45px;
+    }
+    
+    #card .btn-buy {
+        background-color: var(--red);
+        color: #fff;
+        font-size: 0.6875rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        border-radius: 0;
+        padding: 1rem 1.5rem;
+        width: 100%;
+    }
+    
+    .product-main .description-block h3 {
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+    
+    .product-main .description-block h3:not(:first-child) {
+        margin-top: 60px;
+    }
+    
+    .product-main .description-block p {
+        font-size: 1.25rem;
+    }
+    
+    .product-main .description-block table {
+        width: 100%;
+        font-size: 1rem;
+    }
+    
+    .product-main .description-block tr td {
+        padding-bottom: 5px;
+    }
+    
+    #reviews h3 {
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+    
+    #reviews .review-form {
+        background-color: rgba(255, 255, 255, .3);
+        padding: 20px;
     }
     /* breadcrumb */
     
