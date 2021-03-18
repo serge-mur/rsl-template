@@ -663,6 +663,14 @@ input[type=range]::-webkit-slider-runnable-track {
     background-image: url(../img/back1.jpg);
 }
 
+#card {
+    background-image: url(../img/product_back.png);
+    background-position: calc(50% + 350px) 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 0 0 90px 0;
+}
+
 #card .title-block .line-img {
     display: block;
     margin-bottom: 15px;
@@ -698,13 +706,6 @@ input[type=range]::-webkit-slider-runnable-track {
     padding-bottom: 15px;
 }
 
-#card .product-slider-block {
-    background-image: url(../img/product_back.png);
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    background-size: contain;
-}
-
 #card .card-product-slider .slick-slide img {
     margin: auto;
 }
@@ -736,6 +737,23 @@ input[type=range]::-webkit-slider-runnable-track {
 #card .sort-element .btn:focus {
     outline: 0;
     box-shadow: inset 2px 2px 1px rgba(0, 0, 0, 0.5), 1px 1px 1px rgba(255, 255, 255, 1);
+}
+
+#card .sort-element .dropdown .dropdown-menu {
+    color: var(--dark-gray);
+    font-size: 1.125rem;
+    background-color: transparent;
+    box-shadow: inset 2px 2px 1px rgba(0, 0, 0, 0.5), 1px 1px 1px rgba(255, 255, 255, 1);
+    border-radius: 0;
+    background-image: url(../img/back1.jpg);
+    background-position-y: bottom;
+}
+
+#card .sort-element .dropdown .dropdown-menu .dropdown-item:hover,
+#card .sort-element .dropdown .dropdown-menu .dropdown-item:active,
+#card .sort-element .dropdown .dropdown-menu .dropdown-item.active {
+    background-color: transparent;
+    color: var(--red);
 }
 
 #card .price {
@@ -775,6 +793,15 @@ input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
 }
 
+#card .card-product-slider .slick-dots {
+    bottom: 100%;
+}
+
+#characteristics {
+    padding: 90px 0;
+    background-image: url(../img/back1.jpg);
+}
+
 .product-main .description-block h3 {
     font-size: 1.25rem;
     font-weight: bold;
@@ -797,6 +824,23 @@ input[type=range]::-webkit-slider-runnable-track {
     padding-bottom: 5px;
 }
 
+#reviews {
+    padding: 90px 0;
+    background-image: url(../img/back1.jpg);
+}
+
+#reviews .more-link {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    background: url(../img/pattern_button.png) no-repeat center right #e2e2e2;
+    background-size: cover;
+    border-radius: 0;
+    box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, .4);
+    margin: 30px 0;
+}
+
 #reviews h3 {
     font-size: 1.25rem;
     font-weight: bold;
@@ -805,6 +849,7 @@ input[type=range]::-webkit-slider-runnable-track {
 #reviews .review-form {
     background-color: rgba(255, 255, 255, .3);
     padding: 20px;
+    margin-bottom: 30px;
 }
 
 #reviews .review-form .stars-block .label {
@@ -831,9 +876,16 @@ input[type=range]::-webkit-slider-runnable-track {
     border-color: var(--dark-gray);
 }
 
+#reviews .review-form .form-control {
+    padding: 0.875rem .75rem;
+}
+
 #reviews .review-form .form-check .form-check-label {
     font-size: 0.8125rem;
-    font-weight: bold;
+}
+
+#reviews .review-form .form-check .form-check-input {
+    margin-top: 0;
 }
 
 #reviews .reviews-list .review-element {
@@ -856,6 +908,32 @@ input[type=range]::-webkit-slider-runnable-track {
 
 #reviews .reviews-list .review-element .review-message {
     font-size: 0.875rem;
+}
+
+#videos {
+    padding: 90px 0;
+    background-image: url(../img/back1.jpg);
+}
+
+#other-products {
+    padding: 90px 0;
+    background-image: url(../img/back1.jpg);
+}
+
+#other-products h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#other-products .slick-slide img {
+    margin: 0 auto 0 auto;
+    padding: 0 30px;
+}
+
+#other-products .slick-prev,
+#other-products .slick-next {
+    top: calc(50% - 60px);
 }
 
 
@@ -923,6 +1001,7 @@ input[type=range]::-webkit-slider-runnable-track {
 .slick-next {
     background: url(../img/arrow_right.png);
     right: 0;
+    z-index: 1;
 }
 
 
@@ -1086,5 +1165,33 @@ input[type=range]::-webkit-slider-runnable-track {
     .sorting-block .sort-element .label {
         padding-left: 0;
         width: 100%;
+    }
+    #card {
+        background: none;
+        padding: 0 0 30px 0;
+    }
+    #card .price {
+        text-align: center;
+    }
+    #card .sort-element {
+        margin: 20px 0;
+    }
+    #characteristics {
+        padding: 30px 0;
+    }
+    #reviews {
+        padding: 30px 0;
+    }
+    #reviews .review-form .stars-block>span {
+        display: block;
+    }
+    #reviews .reviews-list .review-element {
+        margin-bottom: 30px;
+    }
+    #videos {
+        padding: 30px 0;
+    }
+    #other-products {
+        padding: 30px 0;
     }
 }
