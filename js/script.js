@@ -48,6 +48,21 @@ $('.card-product-slider').slick({
     }]
 });
 
+$('.card-photo-slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [{
+        breakpoint: 992,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: false
+        }
+    }]
+});
+
 $('.card-other-slider').slick({
     infinite: false,
     slidesToShow: 3,
