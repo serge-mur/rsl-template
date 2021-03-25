@@ -6,9 +6,13 @@
     --light-gray: #636363;
 }
 
+body,
+html {
+    height: 100%;
+}
+
 body {
     width: 100%;
-    height: 100%;
     min-height: 75rem;
     padding-top: 75px;
     font-family: 'TT Firs Neue';
@@ -21,6 +25,7 @@ body {
     background-image: url(../img/back1.jpg);
     background-position: top center;
     background-attachment: fixed;
+    position: relative;
 }
 
 .top-block-mobile,
@@ -963,6 +968,47 @@ input[type=range]::-webkit-slider-runnable-track {
 #other-products .slick-prev,
 #other-products .slick-next {
     top: calc(50% - 60px);
+}
+
+#next-nav {
+    background: url(../img/arrow_down.png) no-repeat bottom center;
+    display: inline-block;
+    height: 75px;
+    color: var(--gray);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+/* fixed navigation in card */
+
+#fixed-nav-block {
+    position: fixed;
+    top: 300px;
+    right: 0;
+    z-index: 9999;
+}
+
+#fixed-nav-block .nav-link {
+    text-align: right;
+}
+
+#fixed-nav-block .nav-link div:first-child {
+    color: #fff;
+    font-size: 1.875rem;
+    font-weight: 600;
+    transition: font-size .25s ease-in-out;
+}
+
+#fixed-nav-block .nav-link div:last-child {
+    color: var(--gray);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+}
+
+#fixed-nav-block .nav-link.active div:first-child {
+    font-size: 4rem;
 }
 
 

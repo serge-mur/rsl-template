@@ -13,7 +13,8 @@
     <title>rsl template product</title>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#fixed-nav-block" data-bs-offset="10" tabindex="0">
+
     <div class="c-offcanvas-content-wrap" role="main">
         <header id="header">
 
@@ -133,6 +134,32 @@
         </header>
 
         <main id="main">
+            <nav id="fixed-nav-block" class="nav flex-column d-none d-xl-block">
+                <a class="nav-link" href="#card">
+                    <div>01</div>
+                    <div>Карточка</div>
+                </a>
+                <a class="nav-link" href="#characteristics">
+                    <div>02</div>
+                    <div>Характеристики</div>
+                </a>
+                <a class="nav-link" href="#reviews">
+                    <div>03</div>
+                    <div>Отзывы</div>
+                </a>
+                <a class="nav-link" href="#videos">
+                    <div>04</div>
+                    <div>Видео</div>
+                </a>
+                <a class="nav-link" href="#photo">
+                    <div>05</div>
+                    <div>Фото</div>
+                </a>
+                <!-- <a class="nav-link" href="#other-products">
+                    <div>06</div>
+                    <div>Другие продукты</div>
+                </a> -->
+            </nav>
 
             <div class="product-main">
                 <section id="card">
@@ -216,7 +243,13 @@
                                             <div class="col-7 col-xxl-5 order-3">
                                                 <button class="btn btn-buy">Добавить в корзину</button>
                                             </div>
+
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="row d-none d-xl-block">
+                                    <div class="col-12">
+                                        <a href="#characteristics" id="next-nav">Характеристики</a>
                                     </div>
                                 </div>
 
@@ -497,7 +530,6 @@
                 </section>
 
             </div>
-
         </main>
 
         <footer id="footer">
@@ -624,6 +656,8 @@
         </div>
 
     </aside>
+
+
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="lib/jquery-3.6.0.min.js"></script>
