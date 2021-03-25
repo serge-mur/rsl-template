@@ -663,6 +663,54 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 
+/* test */
+
+.test-card {
+    position: relative;
+}
+
+.test-card .card-text-top-back {
+    position: absolute;
+    width: 75px;
+    height: 200px;
+    left: 50%;
+    top: 20px;
+    font-size: 0.875rem;
+    opacity: 0;
+    transition: transform .25s ease-in-out, opacity .25s ease;
+}
+
+.test-card:hover .card-text-top-back {
+    transform: translateX(-125px);
+    opacity: 1;
+}
+
+.test-card .card-img-top {
+    z-index: 999;
+    transition: transform .25s ease-in-out;
+}
+
+.test-card:hover .card-img-top {
+    transform: translateX(50px);
+}
+
+.test-card .btn-buy span {
+    background-color: var(--red);
+    color: #fff;
+    font-size: 0.875rem;
+    padding: 2px 8px;
+    display: none;
+}
+
+.test-card:hover .btn-buy img {
+    display: none;
+}
+
+.test-card:hover .btn-buy span {
+    display: inline;
+}
+
+
 /* **************/
 
 
