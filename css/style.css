@@ -1198,6 +1198,7 @@ input[type=range]::-webkit-slider-runnable-track {
 @media (min-width: 992px) {
     body {
         padding-top: 0;
+        /* padding-top: 140px; */
     }
     .slider-main {
         padding-top: 180px;
@@ -1226,7 +1227,20 @@ input[type=range]::-webkit-slider-runnable-track {
 
 /* X-Large devices (large desktops, 1200px and up) */
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    /* scrollspy fix */
+    .product-main section:before {
+        height: 136px;
+        content: "";
+        display: block;
+    }
+    .product-main section {
+        padding: 0 0 90px 0!important;
+    }
+    .product-main {
+        padding-top: 0;
+    }
+}
 
 
 /* XX-Large devices (larger desktops, 1400px and up) */
