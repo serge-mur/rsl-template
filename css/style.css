@@ -710,6 +710,14 @@ input[type=range]::-webkit-slider-runnable-track {
     display: inline;
 }
 
+.test-card .card-buy span {
+    white-space: nowrap;
+}
+
+.test-card .card-buy .price {
+    white-space: nowrap;
+}
+
 
 /* **************/
 
