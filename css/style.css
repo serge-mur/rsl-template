@@ -414,7 +414,7 @@ body {
     background-repeat: no-repeat;
     background-position: calc(50% - 500px) bottom;
     background-size: contain;
-    margin-top: 30px;
+    border-top: 30px solid #e8e8e8;
 }
 
 .feedback-form .form-block {
@@ -1068,6 +1068,101 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 
+/* ************/
+
+
+/* about page */
+
+
+/* ************/
+
+.about-page {
+    background: none;
+    padding-top: 0;
+}
+
+.about-page .top-block-mobile,
+.about-page .top-block-desktop {
+    background: none;
+}
+
+.top-about {
+    background-image: url(../img/about_top.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* padding: 0 0 90px 0; */
+    height: 1080px;
+}
+
+.top-about nav {
+    padding-top: 135px;
+}
+
+.top-about .legend-block {
+    padding: 30px 0 30px 30px;
+    max-width: 600px;
+}
+
+.top-about .legend-block p {
+    color: #fff;
+    font-size: 1.5625rem;
+}
+
+.top-about .legend-block img {
+    margin-bottom: 30px;
+}
+
+.info-about {
+    background-image: url(../img/about_back1.png), url(../img/back1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat, repeat;
+    background-position: center bottom, center top;
+    padding: 90px 0;
+}
+
+.info-about .intro-block {
+    font-size: 1.25rem;
+}
+
+.info-about .intro-block .logo-content {}
+
+.advantages-about {
+    background-image: url(../img/about_back2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.advantages-about {
+    padding: 90px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.advantages-about h3 {
+    font-size: 1.875rem;
+    margin-bottom: 75px;
+}
+
+.advantages-about p {
+    font-size: 1.5625rem;
+}
+
+.advantages-about .adv-block {
+    padding: 75px 0 0 0;
+}
+
+.advantages-about .adv-block .adv-item .adv-img {
+    height: 116px;
+    margin-bottom: 15px;
+}
+
+.advantages-about .adv-block .adv-item .adv-title {
+    font-size: 1.5625rem;
+}
+
+
 /* breadcrumb */
 
 .breadcrumb {
@@ -1346,5 +1441,65 @@ input[type=range]::-webkit-slider-runnable-track {
     }
     #other-products {
         padding: 30px 0;
+    }
+    .top-about {
+        background-image: url(../img/about_top_mob.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        /* padding: 0 0 90px 0; */
+        height: 722px;
+    }
+    .top-about nav {
+        padding-top: 75px;
+    }
+    .top-about .legend-block {
+        padding: 15px;
+        text-align: center;
+    }
+    .top-about .legend-block p {
+        font-size: 1.0625rem;
+    }
+    .top-about .legend-block img {
+        margin-bottom: 15px;
+    }
+    .info-about {
+        background-size: cover;
+        /* background-image: url(../img/about_back1.png), url(../img/back1.jpg);
+        background-repeat: no-repeat, repeat;
+        background-position: center bottom, center top; */
+        padding: 30px 0;
+    }
+    .info-about .intro-block p {
+        font-size: 0.9375rem;
+    }
+    .info-about .intro-block .logo-content {
+        width: 160px;
+    }
+    .advantages-about {
+        padding: 30px 0;
+    }
+    .advantages-about h3 {
+        font-size: 1.4375rem;
+        margin-bottom: 30px;
+    }
+    .advantages-about p {
+        font-size: 1.25rem;
+    }
+    .advantages-about .adv-block {
+        padding: 30px 0 0 0;
+    }
+    .advantages-about .adv-block .adv-item {
+        margin-bottom: 55px;
+    }
+    .advantages-about .adv-block .adv-item .adv-img {
+        margin-bottom: 5px;
+        height: auto;
+    }
+    .advantages-about .adv-block .adv-item .adv-img img {
+        max-height: 60px;
+    }
+    .advantages-about .adv-block .adv-item .adv-title {
+        font-size: 1.0625rem;
     }
 }
