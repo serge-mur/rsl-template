@@ -13,7 +13,7 @@ html {
 
 body {
     width: 100%;
-    min-height: 75rem;
+    /* min-height: 75rem; */
     padding-top: 75px;
     font-family: 'TT Firs Neue';
     font-weight: normal;
@@ -463,6 +463,10 @@ body {
 
 
 /* ************* */
+
+body.category-page {
+    padding-top: 140px;
+}
 
 .category-main {
     /* background-image: url(../img/back1.jpg); */
@@ -1076,7 +1080,7 @@ input[type=range]::-webkit-slider-runnable-track {
 
 /* ************/
 
-.about-page {
+body.about-page {
     background: none;
     padding-top: 0;
 }
@@ -1160,6 +1164,112 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .advantages-about .adv-block .adv-item .adv-title {
     font-size: 1.5625rem;
+}
+
+
+/* ******************/
+
+
+/* wholesalers page */
+
+
+/* ******************/
+
+body.wholesalers-page {
+    padding-top: 140px;
+}
+
+.form-opt-block {
+    background-color: rgba(255, 255, 255, .3);
+    padding: 30px 90px;
+    margin-bottom: 30px;
+}
+
+.form-opt-block h3 {
+    font-size: 1.9375rem;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.form-opt-block h3+p {
+    font-size: 1.25rem;
+}
+
+.form-opt-block h3+p+small {
+    display: block;
+    font-size: 0.875rem;
+    margin-bottom: 30px;
+}
+
+.form-opt-block .form-control {
+    padding: 0.875rem .75rem;
+    font-size: 0.875rem;
+    color: var(--dark-gray);
+    border: none;
+    border-radius: 0;
+    margin-bottom: 20px;
+    background-image: url(../img/back1.jpg);
+    background-position: center top;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.25), -1px -1px 1px rgba(255, 255, 255, 0.25);
+}
+
+.form-opt-block .btn-submit {
+    background-color: var(--red);
+    color: #fff;
+    font-size: 1.25rem;
+    text-transform: lowercase;
+    border-radius: 0;
+    padding: .5rem 1.5rem;
+    width: 250px;
+    margin-top: 40px;
+}
+
+.advantages-opt-block h3 {
+    font-size: 1.9375rem;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.advantages-opt-block .adv-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.advantages-opt-block .adv-item div {
+    width: 90px;
+}
+
+.advantages-opt-block .adv-item span {
+    font-size: 1.6875rem;
+}
+
+.download-opt-block {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 0 0 0;
+}
+
+.download-opt-block .download-item {
+    position: relative;
+    margin: 0 30px 60px 0;
+}
+
+.download-opt-block .download-item img {
+    position: absolute;
+    left: 0;
+    top: -35px;
+}
+
+.download-opt-block .download-item .btn {
+    background-color: var(--red);
+    color: #fff;
+    font-size: 1.25rem;
+    text-transform: lowercase;
+    border-radius: 0;
+    padding: .5rem 1.5rem;
+    width: 250px;
+    margin-left: 35px;
 }
 
 
@@ -1501,5 +1611,43 @@ input[type=range]::-webkit-slider-runnable-track {
     }
     .advantages-about .adv-block .adv-item .adv-title {
         font-size: 1.0625rem;
+    }
+    body.wholesalers-page {
+        padding-top: 75px;
+    }
+    .form-opt-block {
+        background-color: transparent;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    .form-opt-block h3 {
+        font-size: 1.5625rem;
+        margin-bottom: 15px;
+    }
+    .form-opt-block h3+p {
+        font-size: 1.25rem;
+    }
+    .form-opt-block h3+p+small {
+        font-size: 0.875rem;
+        margin-bottom: 15px;
+    }
+    .form-opt-block .btn-submit {
+        display: block;
+        margin: 15px auto;
+    }
+    .advantages-opt-block h3 {
+        font-size: 1.5625rem;
+        margin-bottom: 15px;
+    }
+    .advantages-opt-block .adv-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .advantages-opt-block .adv-item div {
+        width: 90px;
+    }
+    .advantages-opt-block .adv-item span {
+        font-size: 1.25rem;
     }
 }
