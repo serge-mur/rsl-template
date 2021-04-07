@@ -1237,7 +1237,7 @@ body.wholesalers-page {
 }
 
 .advantages-opt-block .adv-item div {
-    width: 90px;
+    min-width: 90px;
 }
 
 .advantages-opt-block .adv-item span {
