@@ -1273,6 +1273,167 @@ body.wholesalers-page {
 }
 
 
+/* ***************/
+
+
+/* wherebuy page */
+
+
+/* ***************/
+
+.wherebuy-block {
+    margin-bottom: 90px;
+}
+
+#nav-tab.nav-pills {
+    margin-bottom: 30px;
+}
+
+#nav-tab.nav-pills .nav-link {
+    color: var(--dark-gray);
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: transparent;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5), -1px -1px 1px rgba(255, 255, 255, 1);
+    border-radius: 0;
+    background-image: url(../img/back1.jpg);
+    background-position: center bottom;
+    padding: 10px 90px;
+    margin-right: 15px;
+}
+
+#nav-tab.nav-pills .nav-link.active {
+    color: var(--red);
+    outline: 0;
+    box-shadow: inset 2px 2px 1px rgba(0, 0, 0, 0.5), 1px 1px 1px rgba(255, 255, 255, 1);
+}
+
+.store-list {
+    height: 350px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.store-list .store-item {
+    padding: 20px 10px;
+    font-size: 14px;
+    box-shadow: 0px -2px 2px -2px rgba(0, 0, 0, .5) inset;
+}
+
+.store-list .store-item:hover,
+.store-list .store-item.active {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.store-list .store-item .store-label {
+    width: 70px;
+    height: 35px;
+    background-image: url(../img/store_label_active.png);
+    filter: grayscale(100%);
+}
+
+.store-list .store-item:hover .store-label,
+.store-list .store-item:active .store-label {
+    filter: grayscale(0);
+}
+
+.store-list .store-item .store-contacts .city {
+    font-weight: bold;
+}
+
+.store-list .store-item .store-contacts .phones {
+    margin-bottom: 10px;
+}
+
+.store-list .store-item .store-contacts .time {}
+
+.market-list .market-item {
+    display: flex;
+    height: 230px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    background-color: rgba(255, 255, 255, .25);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25), -1px -1px 5px rgba(255, 255, 255, .25);
+    align-items: flex-end;
+    justify-content: center;
+    padding: 30px;
+    color: var(--red);
+    margin-bottom: 30px;
+}
+
+.market-list .market-item.sber {
+    background-image: url(../img/logo_sber_active.png);
+}
+
+.market-list .market-item.beru {
+    background-image: url(../img/logo_beru_active.png);
+}
+
+.market-list .market-item:hover {
+    filter: grayscale(0);
+    /* box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.25), 1px 1px 5px rgba(255, 255, 255, .25); */
+}
+
+
+/* ***************/
+
+
+/* contacts page */
+
+
+/* ***************/
+
+.contacts-text-block h3,
+.feedback-contacts-form-title {
+    font-size: 1.5625rem;
+    font-weight: 600;
+}
+
+.feedback-contacts-form {
+    background-color: rgba(255, 255, 255, .3);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.feedback-contacts-form .btn-submit {
+    background-color: var(--red);
+    color: #fff;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 1rem 1.5rem;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.feedback-contacts-form .form-check {
+    margin-bottom: 20px;
+}
+
+.feedback-contacts-form .form-check .form-check-input:checked {
+    background-color: var(--dark-gray);
+    border-color: var(--dark-gray);
+}
+
+.feedback-contacts-form .form-control {
+    padding: 0.875rem .75rem;
+    border-radius: 0;
+    border-color: transparent;
+    margin-bottom: 20px;
+}
+
+.feedback-contacts-form .form-check .form-check-label {
+    font-size: 0.8125rem;
+}
+
+.feedback-contacts-form .form-check .form-check-input {
+    margin-top: 0;
+}
+
+
 /* breadcrumb */
 
 .breadcrumb {
@@ -1649,5 +1810,15 @@ body.wholesalers-page {
     }
     .advantages-opt-block .adv-item span {
         font-size: 1.25rem;
+    }
+    #nav-tab.nav-pills {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    #nav-tab.nav-pills .nav-link {
+        padding: 10px 50px;
+    }
+    #nav-tab.nav-pills .nav-link:last-child {
+        margin-right: 0;
     }
 }
