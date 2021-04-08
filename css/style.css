@@ -1377,6 +1377,49 @@ body.wholesalers-page {
 }
 
 
+/* ***********/
+
+
+/* line page */
+
+
+/* ***********/
+
+body.line-page {
+    padding-top: 136px;
+}
+
+.line-top {
+    background-image: url(../img/back_line.png);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 500px) top;
+    background-size: contain;
+}
+
+.description-line-block .img-title {
+    background: url(../img/pattern_line.png) repeat-x right;
+    margin-bottom: 30px;
+}
+
+.line-main .description-line-block {
+    /* padding-bottom: 90px; */
+}
+
+#production-anchor:before {
+    height: 136px;
+    content: "";
+    display: block;
+}
+
+#production-anchor {
+    /* padding: 0 0 90px 0!important; */
+}
+
+#production-anchor {
+    padding-top: 0;
+}
+
+
 /* ***************/
 
 
@@ -1640,6 +1683,9 @@ body.wholesalers-page {
     .feedback-form .form-block {
         padding: 30px 0;
     }
+    body.category-page {
+        padding-top: 75px;
+    }
     .sidebar-menu {
         background-color: #fff;
         padding-bottom: 30px;
@@ -1820,5 +1866,14 @@ body.wholesalers-page {
     }
     #nav-tab.nav-pills .nav-link:last-child {
         margin-right: 0;
+    }
+    body.line-page {
+        padding-top: 75px;
+    }
+    .line-top {
+        background-image: none
+    }
+    #production-anchor:before {
+        display: none;
     }
 }

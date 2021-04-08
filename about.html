@@ -376,6 +376,23 @@
     <script src="lib/js-offcanvas/js-offcanvas.pkgd.min.js"></script>
     <script src="lib/slick/slick.min.js"></script>
     <script src="js/script.js"></script>
+
+    <style>
+        .top-block-js {
+            background-image: url(../img/back1.jpg)!important;
+        }
+    </style>
+    <script>
+        $(window).scroll(function() {
+            var height = $(window).scrollTop();
+
+            if (height > 236) {
+                $(".about-page .top-block-mobile, .about-page .top-block-desktop").addClass("top-block-js");
+            } else {
+                $(".about-page .top-block-mobile, .about-page .top-block-desktop").removeClass("top-block-js");
+            }
+        });
+    </script>
 </body>
 
 </html>
